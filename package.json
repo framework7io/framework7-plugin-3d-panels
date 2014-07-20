@@ -1,0 +1,57 @@
+{
+  "name": "Framework7 3D Panels",
+  "version": "1.0.0",
+  "description": "Framework7 plugin to add 3d effect for side panels",
+  "main": "dist/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nolimits4web/Framework7-3D-Panels.git"
+  },
+  "keywords": [
+    "mobile", 
+    "framework", 
+    "ios 7", 
+    "ios7", 
+    "ios8", 
+    "ios 8", 
+    "iphone", 
+    "ipad", 
+    "apple", 
+    "phonegap", 
+    "native", 
+    "touch", 
+    "appstore", 
+    "app", 
+    "f7"
+  ],
+  "author": "Vladimir Kharlampidi",
+  "license": [
+    "MIT"
+  ],
+  "bugs": {
+    "url": "https://github.com/nolimits4web/Framework7-3D-Panels/issues"
+  },
+  "homepage": "http://www.idangero.us/framework7/",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.2.0",
+    "jshint": "~0.9",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-less": "^0.11.0",
+    "grunt-contrib-jade": "~0.9.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-connect": "~0.7.0",
+    "grunt-open": "~0.2.3",
+    "jshint-stylish": "~0.1.5",
+    "time-grunt": "~0.2.8"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
