@@ -1,5 +1,5 @@
 /*
- * Framework7 3D Panels 1.0.0
+ * Framework7 3D Panels 0.9.0
  * Framework7 plugin to add 3d effect for side panels
  *
  * http://www.idangero.us/framework7/
@@ -10,9 +10,9 @@
  *
  * Licensed under MIT
  *
- * Released on: July 20, 2014
+ * Released on: July 21, 2014
 */
-Framework7.prototype.plugins.tdPanels = function (app, params) {
+Framework7.prototype.plugins.panels3d = function (app, params) {
     'use strict';
 
     var $, leftPanelWidth, rightPanelWidth, leftPanel, rightPanel, views;
@@ -31,10 +31,10 @@ Framework7.prototype.plugins.tdPanels = function (app, params) {
         });
     }
 
+
     function appInit() {
         $ = Framework7.$;
         views = $('.views');
-
         leftPanel = $('.panel-left.panel-reveal');
         rightPanel = $('.panel-right.panel-reveal');
 
