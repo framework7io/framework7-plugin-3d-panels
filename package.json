@@ -1,6 +1,6 @@
 {
   "name": "Framework7 3D Panels",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "Framework7 plugin to add 3d effect for side panels",
   "main": "dist/",
   "repository": {
