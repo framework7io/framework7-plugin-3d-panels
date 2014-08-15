@@ -1,7 +1,8 @@
 Framework7.prototype.plugins.panels3d = function (app, params) {
     'use strict';
 
-    var $, leftPanelWidth, rightPanelWidth, leftPanel, rightPanel, views;
+    var $ = window.Dom7;
+    var leftPanelWidth, rightPanelWidth, leftPanel, rightPanel, views;
 
     function leftPanelOpen() {
         views.css({
@@ -19,7 +20,6 @@ Framework7.prototype.plugins.panels3d = function (app, params) {
 
 
     function appInit() {
-        $ = Framework7.$;
         views = $('.views');
         leftPanel = $('.panel-left.panel-reveal');
         rightPanel = $('.panel-right.panel-reveal');
