@@ -1,15 +1,16 @@
-body {
+body.panels-3d {
     -webkit-perspective: 1100px;
     -moz-perspective: 1100px;
     perspective: 1100px;
     overflow: hidden;
+    .views {
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
 }
-.views {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-.panel-reveal {
+    
+body.panels-3d .panel-reveal {
     &.panel-left {
         -webkit-transform: translate3d(-260px, 0, 0);
         transform: translate3d(-260px, 0, 0);
@@ -19,7 +20,7 @@ body {
         transform: translate3d(260px, 0, 0);
     }
 }
-body.with-panel-left-reveal {
+body.panels-3d.with-panel-left-reveal {
     .views {
         -webkit-transform: translate3d(260px, 0, 0) rotateY(-30deg);
         transform: translate3d(260px, 0, 0) rotateY(-30deg);
@@ -31,7 +32,7 @@ body.with-panel-left-reveal {
         transform: translate3d(0px, 0, 0);
     }
 }
-body.with-panel-right-reveal {
+body.panels-3d.with-panel-right-reveal {
     .views {
         -webkit-transform: translate3d(-260px, 0, 0) rotateY(30deg);
         transform: translate3d(-260px, 0, 0) rotateY(30deg);
