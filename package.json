@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/nolimits4web/Framework7-3D-Panels/issues"
   },
-  "homepage": "http://www.idangero.us/framework7/",
+  "homepage": "http://www.idangero.us/framework7/plugins/",
   "engines": {
     "node": ">= 0.10.0"
   },
