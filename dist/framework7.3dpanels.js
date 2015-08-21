@@ -1,10 +1,10 @@
 /**
- * Framework7 3D Panels 0.9.5
+ * Framework7 3D Panels 1.0.0
  * Framework7 plugin to add 3d effect for side panels
  * 
  * http://www.idangero.us/framework7/plugins/
  * 
- * Copyright 2010-2015, Vladimir Kharlampidi
+ * Copyright 2015, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
  * 

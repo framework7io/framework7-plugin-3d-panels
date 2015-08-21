@@ -30,7 +30,7 @@
                 ' * ',
                 ' * <%= pkg.homepage %>',
                 ' * ',
-                ' * Copyright 2010-<%= date.year %>, <%= pkg.author %>',
+                ' * Copyright <%= date.year %>, <%= pkg.author %>',
                 ' * The iDangero.us',
                 ' * http://www.idangero.us/',
                 ' * ',
