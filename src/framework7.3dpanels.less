@@ -1,46 +1,56 @@
-body.panels-3d {
-    -webkit-perspective: 1100px;
-    -moz-perspective: 1100px;
-    perspective: 1100px;
-    overflow: hidden;
-    .views {
-        -webkit-transform-style: preserve-3d;
-        -moz-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-    }
+.with-panels-3d .framework7-root {
+  perspective: 1100px;
+  overflow: hidden;
+  .views {
+    transform-style: preserve-3d;
+  }
 }
-    
-body.panels-3d .panel-reveal {
-    &.panel-left {
-        -webkit-transform: translate3d(-260px, 0, 0);
-        transform: translate3d(-260px, 0, 0);
-    }
-    &.panel-right {
-        -webkit-transform: translate3d(260px, 0, 0);
-        transform: translate3d(260px, 0, 0);
-    }
+
+.with-panels-3d .panel-reveal {
+  &.panel-left {
+    transform: translate3d(-260px, 0, 0);
+  }
+  &.panel-right {
+    transform: translate3d(260px, 0, 0);
+  }
 }
-body.panels-3d.with-panel-left-reveal {
-    .views {
-        -webkit-transform: translate3d(260px, 0, 0) rotateY(-30deg);
-        transform: translate3d(260px, 0, 0) rotateY(-30deg);
-        -webkit-transform-origin: right center;
-        transform-origin: right center;
+.with-panels-3d.with-panel-left-reveal {
+  .framework7-root {
+    > .views, > .view {
+      transform: translate3d(260px, 0, 0) rotateY(-30deg);
+      transform-origin: right center;
     }
-    .panel-left {
-        -webkit-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
+  }
+  .panel-left {
+    transform: translate3d(0px, 0, 0);
+  }
 }
-body.panels-3d.with-panel-right-reveal {
-    .views {
-        -webkit-transform: translate3d(-260px, 0, 0) rotateY(30deg);
-        transform: translate3d(-260px, 0, 0) rotateY(30deg);
-        -webkit-transform-origin: left center;
-        transform-origin: left center;
+.with-panels-3d.with-panel-right-reveal {
+  .framework7-root {
+    > .views, > .view {
+      transform: translate3d(-260px, 0, 0) rotateY(30deg);
+      transform-origin: left center;
     }
-    .panel-right {
-        -webkit-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
+  }
+  .panel-right {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+.with-panels-3d {
+  &.with-panel-left-reveal, &.with-panel-right-reveal {
+    .framework7-root {
+      > .views, > .view {
+        transition-property: transform-origin, transform;
+      }
     }
+  }
+}
+.md.with-panels-3d {
+  &.with-panel-left-reveal, &.with-panel-right-reveal {
+    .framework7-root {
+      > .views, > .view {
+        box-shadow: none;
+      }
+    }
+  }
 }
