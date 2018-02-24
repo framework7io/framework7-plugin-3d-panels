@@ -1,15 +1,12 @@
 /**
- * Framework7 3D Panels 1.0.0
+ * Framework7 Plugin 3D Panels 2.0.0
  * Framework7 plugin to add 3d effect for side panels
- * 
- * http://www.idangero.us/framework7/plugins/
- * 
- * Copyright 2015, Vladimir Kharlampidi
- * The iDangero.us
- * http://www.idangero.us/
- * 
- * Licensed under MIT
- * 
- * Released on: August 22, 2015
+ * http://framework7.io/plugins/
+ *
+ * Copyright 2014-2018 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: February 24, 2018
  */
-body.panels-3d{-webkit-perspective:1100px;-moz-perspective:1100px;perspective:1100px;overflow:hidden}body.panels-3d .views{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d}body.panels-3d .panel-reveal.panel-left{-webkit-transform:translate3d(-260px,0,0);transform:translate3d(-260px,0,0)}body.panels-3d .panel-reveal.panel-right{-webkit-transform:translate3d(260px,0,0);transform:translate3d(260px,0,0)}body.panels-3d.with-panel-left-reveal .views{-webkit-transform:translate3d(260px,0,0) rotateY(-30deg);transform:translate3d(260px,0,0) rotateY(-30deg);-webkit-transform-origin:right center;transform-origin:right center}body.panels-3d.with-panel-left-reveal .panel-left{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}body.panels-3d.with-panel-right-reveal .views{-webkit-transform:translate3d(-260px,0,0) rotateY(30deg);transform:translate3d(-260px,0,0) rotateY(30deg);-webkit-transform-origin:left center;transform-origin:left center}body.panels-3d.with-panel-right-reveal .panel-right{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.with-panels-3d .framework7-root{-webkit-perspective:1100px;perspective:1100px;overflow:hidden}.with-panels-3d .framework7-root .views{-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.with-panels-3d .panel-reveal.panel-left{-webkit-transform:translate3d(-260px,0,0);transform:translate3d(-260px,0,0)}.with-panels-3d .panel-reveal.panel-right{-webkit-transform:translate3d(260px,0,0);transform:translate3d(260px,0,0)}.with-panels-3d.with-panel-left-reveal .framework7-root>.view,.with-panels-3d.with-panel-left-reveal .framework7-root>.views{-webkit-transform:translate3d(260px,0,0) rotateY(-30deg);transform:translate3d(260px,0,0) rotateY(-30deg);-webkit-transform-origin:right center;transform-origin:right center}.with-panels-3d.with-panel-left-reveal .panel-left{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.with-panels-3d.with-panel-right-reveal .framework7-root>.view,.with-panels-3d.with-panel-right-reveal .framework7-root>.views{-webkit-transform:translate3d(-260px,0,0) rotateY(30deg);transform:translate3d(-260px,0,0) rotateY(30deg);-webkit-transform-origin:left center;transform-origin:left center}.with-panels-3d.with-panel-right-reveal .panel-right{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.with-panels-3d.with-panel-left-reveal .framework7-root>.view,.with-panels-3d.with-panel-left-reveal .framework7-root>.views,.with-panels-3d.with-panel-right-reveal .framework7-root>.view,.with-panels-3d.with-panel-right-reveal .framework7-root>.views{-webkit-transition-property:-webkit-transform-origin,-webkit-transform;transition-property:-webkit-transform-origin,-webkit-transform;transition-property:transform-origin,transform;transition-property:transform-origin,transform,-webkit-transform-origin,-webkit-transform}.md.with-panels-3d.with-panel-left-reveal .framework7-root>.view,.md.with-panels-3d.with-panel-left-reveal .framework7-root>.views,.md.with-panels-3d.with-panel-right-reveal .framework7-root>.view,.md.with-panels-3d.with-panel-right-reveal .framework7-root>.views{-webkit-box-shadow:none;box-shadow:none}

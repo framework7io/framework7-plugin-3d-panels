@@ -1,3 +1,14 @@
+/**
+ * Framework7 Plugin 3D Panels 2.0.0
+ * Framework7 plugin to add 3d effect for side panels
+ * http://framework7.io/plugins/
+ *
+ * Copyright 2014-2018 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: February 24, 2018
+ */
 
 const Panels3d = {
   enable() {
@@ -54,7 +65,7 @@ const Panels3d = {
   },
 };
 
-export default {
+var framework7_3dpanels = {
   name: 'panels3d',
   params: {
     panels3d: {
@@ -102,3 +113,5 @@ export default {
     },
   },
 };
+
+export default framework7_3dpanels;
