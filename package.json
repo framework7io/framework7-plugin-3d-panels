@@ -13,7 +13,7 @@
     "prod": "npm run copy-f7 && cross-env NODE_ENV=production gulp demo && cross-env NODE_ENV=production gulp server",
     "lint": "eslint .",
     "test": "npm run build:dev && eslint .",
-    "postinstall": "npm run copy-f7 && cpy demo/index.html ./"
+    "postinstall": "npm run copy-f7 && cpy demo/index.html ./ && replace '../dist' 'dist' ./index.html"
   },
   "repository": {
     "type": "git",
